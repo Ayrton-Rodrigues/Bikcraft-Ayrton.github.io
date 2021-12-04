@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/*
 :root { 
    
         --cor-0: #ffffff;
@@ -22,65 +22,112 @@
         --cor-p5: #332200;
     
 }
-
+*/
 body {
-    margin: 0px;
-    color: #111111;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  p,
-  ul,
-  blockquote,
-  dd {
-    margin: 0px;
-  }
-  
-  ul {
-    padding: 0px;
-    list-style: none;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  img[src$=".jpg"] {
-    border-radius: 4px;
-  }
+  margin: 0px;
+  color: #111111;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-header { 
-    background-color: #141414;
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+blockquote,
+dd {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header-bg {
+  background-color: var(--cor-12);
 }
 .header {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-sizing: border-box;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-  background-color: #141414;
+  max-width: 1160px;
+  margin: 0 auto;
+  background-color: #000000;
   padding: 20px;
   align-items: center;
 }
 
-.menu {
+.header-menu {
   display: flex;
-  gap: 30px;
-  font-size: 1.5rem;
-  
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
-.menu a {
+.header-menu a {
+  display: inline-block;
   color: #ffffff;
+  padding: 16px 0px;
+  font-size: 1.125rem;
+  position: relative;
+}
+
+.header-menu a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: #ffffff;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-menu a:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 20px;
+  }
+
+  .header a:after {
+    display: none;
+  }
+
+  .header-menu a {
+    background: #111111;
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+  .header-menu a:hover {
+    background-color: #2e2e2e;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 12px;
+  }
+
+  .header-menu a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
 }
