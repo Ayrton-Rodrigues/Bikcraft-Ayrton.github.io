@@ -1,0 +1,83 @@
+/*Antes de assistir as aulas do projeto, eu tento colocar em prática usando os conhecimentos adquiridos até aqui. A partir desse tópico passarei a fazer o meu código e deixar o do prof. comentado, sempre usando para eventuais pontos de melhoria e consulta para confirmar o aprendizado. */
+
+.personalize-bg {
+  background: var(--cor-11);
+  /* Não estava conseguindo ajustar as box da imagem e precisei recorrer na aula e ja achei a solução. Pode colocar 2 box-shadow e eu não sabia.*/
+  box-shadow: inset 0px 80px var(--cor-0), inset 0px -80px var(--cor-0);
+}
+
+.personalize {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.personalize-itens {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+/*Parte da imagem ajustada após correções percebidas na aula */
+
+.personalize-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  grid-column: 2;
+}
+
+.personalize-itens span {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.link {
+  margin-bottom: 60px;
+}
+
+.personalize-itens p {
+  padding-bottom: 20px;
+}
+
+.personalize-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.personalize-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.personalize-list li img {
+  width: 25px;
+}
+
+@media (max-width: 800px) {
+  .personalize {
+    grid-template-columns: 1fr;
+  }
+  .personalize-image {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .personalize-itens {
+    text-align: center;
+  }
+
+  .personalize-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 300px;
+    margin: auto;
+    justify-self: center;
+  }
+  .personalize-list img {
+    margin: auto;
+  }
+}

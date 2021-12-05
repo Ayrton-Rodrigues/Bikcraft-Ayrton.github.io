@@ -8,12 +8,7 @@
 
 .bike-list h2 { 
     margin-bottom: 40px;
-    max-width: 1200px;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-    margin-right: auto;
-    margin-left: auto;
+   
 }
 
 .bike-list ul { 
@@ -23,7 +18,7 @@
     max-width: 1400px;
     margin-right: auto;
     margin-left: auto;
-    overflow: auto; /* oportunidade de aprender a adaptar uma sequencia de itens para mobile atráves do scroll. */
+    overflow-x: auto; /* oportunidade de aprender a adaptar uma sequencia de itens para mobile atráves do scroll. Pode definir em ambos os eixos "x e y". nesse caso será utilizado apenas no eixo x. */
 }
 
 .bike-list li { 
@@ -58,7 +53,7 @@
     width: 12px;
     margin-right: 8px;
     background-color: var(--cor-p1);
-   transition: width 0.2s;
+    transition: 0.2s;
 }
 
 .bike-list a:hover h3::before { 
@@ -73,7 +68,7 @@ width: 26px;
 @media (max-width: 800px) { 
    
     .bike-list {            
-        padding-bottom: 60px;
+        padding-bottom: 0px;
       
     }
 

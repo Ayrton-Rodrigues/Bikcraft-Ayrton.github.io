@@ -4,14 +4,13 @@
 .header {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  box-sizing: border-box;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: 20px;  
+  justify-content: space-between;  
   background-color: var(--cor-12);
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   align-items: center;
+
 }
 
 .header-menu {
