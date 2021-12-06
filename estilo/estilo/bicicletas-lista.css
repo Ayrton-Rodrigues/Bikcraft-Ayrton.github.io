@@ -76,3 +76,10 @@ width: 26px;
         gap: 20px;
     }
  }
+
+ @media (max-width:600px) {
+    .bike-list h2 { 
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
