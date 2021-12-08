@@ -1,0 +1,82 @@
+.security-bg {
+  background-color: var(--cor-11);
+}
+
+.security-bg h2 {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.security {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 80px;
+  gap: 40px;
+  align-items: center;
+}
+
+.security-silver,
+.security-gold {
+  background-color: var(--cor-12);
+  padding: 40px 40px 40px 60px;
+  border-radius: 4px;
+}
+
+.security-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.security-silver p,
+.security-gold p {
+  text-align: right;
+}
+
+.security-list ul {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  list-style: none;
+}
+
+.security-list li {
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.security-list li:before {
+ content: "";
+ background: url("/img/icones/lista.svg") no-repeat;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ left: -20px;
+ top: 10px;
+
+}
+
+.security-silver .botao {
+  background: var(--cor-10);
+  color: var(--cor-0);
+}
+
+.security-gold .botao {
+  background: var(--cor-p1);
+  color: var(--cor-p5);
+}
+
+@media (max-width: 850px) {
+  .security {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .security-bg h2 {
+    padding-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .security-list li{
+    padding-bottom: 10px;
+  }
+}
+
