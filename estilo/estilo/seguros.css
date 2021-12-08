@@ -54,15 +54,6 @@
 
 }
 
-.security-silver .botao {
-  background: var(--cor-10);
-  color: var(--cor-0);
-}
-
-.security-gold .botao {
-  background: var(--cor-p1);
-  color: var(--cor-p5);
-}
 
 @media (max-width: 850px) {
   .security {
