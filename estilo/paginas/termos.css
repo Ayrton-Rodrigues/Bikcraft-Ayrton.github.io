@@ -1,0 +1,44 @@
+.term-bg {
+    background: var(--cor-11);
+}
+
+.term { 
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+/* main */
+
+
+/*Parte dos termos padding-right: 350px;*/
+
+.term-container{ 
+    background: var(--cor-0);    
+    padding-top: 100px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+}
+
+.term-container h2 { 
+    padding-bottom: 40px;
+}
+
+.term-container p { 
+    padding-bottom: 40px;
+}
+
+@media (max-width:800px) { 
+    .term-container { 
+        grid-template-columns: 1fr;
+        justify-content: center;
+      
+    }
+    .term-container h2 { 
+        text-align: center;
+    }
+    .term  { 
+       
+        text-align: center;
+    }
+}
