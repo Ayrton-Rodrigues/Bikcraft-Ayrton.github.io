@@ -51,8 +51,8 @@
     place-self: start;
   }
   .footer-contact {
-  
-border: 1px solid var(--cor-11) ;
+    border-left: 1px solid var(--cor-11);
+    border-right: 1px solid var(--cor-11);
     text-align: center;
     margin: auto;
     padding: 20px;
@@ -63,7 +63,8 @@ border: 1px solid var(--cor-11) ;
   }
 
   .footer-information {
-    border: 1px solid var(--cor-11) ;
+    border-left: 1px solid var(--cor-11);
+    border-right: 1px solid var(--cor-11);
     text-align: center;
     margin: auto;
     padding: 20px;
