@@ -46,6 +46,12 @@ margin-left: auto;
     color: var(--cor-3);  
   }
 
+  .icon { 
+    width: 25px;
+    height: 25px;
+  }
+
+
 
   @media (max-width: 800px) {
     .botao {
