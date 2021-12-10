@@ -51,6 +51,11 @@ margin-left: auto;
     height: 25px;
   }
 
+  .title-bg { 
+    background: var(--cor-11);
+     padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
 
   @media (max-width: 800px) {

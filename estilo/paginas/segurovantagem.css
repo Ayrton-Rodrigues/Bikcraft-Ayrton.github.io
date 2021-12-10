@@ -1,0 +1,110 @@
+.advantage-bg { 
+    background: var(--cor-12);
+    padding-bottom: 100px;
+}
+
+.advantage-bg ul { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+
+}
+
+
+.advantage-bg ul li > h3{ 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.questions {
+    margin-bottom: 100px;
+}
+
+.questions h2 { 
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.questions ul li{    
+    padding-bottom: 20px;
+}
+.questions li{ 
+    padding: 20px;
+    padding-left: 50px;
+    border-radius: 4px;
+}
+
+
+.questions li h3 { 
+    padding-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.questions li h3::before { 
+   content: "";
+   width: 12px;
+   height: 8px;
+   background: var(--cor-p1);
+   position: absolute;
+   display: inline-block;
+  left: -20px;
+  
+}
+.questions li h3::after { 
+    content: "";
+    width: 18px;
+    height: 15px;
+    background: url(../../img/icones/seta-abrir.svg) no-repeat;
+    position: absolute;
+    right: 0px;
+   
+   
+ }
+ .questions li h3:hover::after {
+     transform:rotate(180deg);     
+     transition: 0.2s;
+ }
+
+ 
+
+.questions li p { 
+    max-width: 80ch;
+}
+
+
+.questions li:nth-child(odd) {
+    background: var(--cor-1);
+
+}
+
+@media (max-width: 800px) { 
+    .advantage-bg ul { 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        text-align: center;
+    }
+    .advantage-bg img { 
+        margin: auto;
+    }
+
+    .advantage-bg h2 { 
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+
+    .questions h2 {
+        padding-top: 10px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+}
+
+
+
+
