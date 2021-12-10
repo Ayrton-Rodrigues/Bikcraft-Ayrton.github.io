@@ -3,7 +3,7 @@
    /* foi ensinado a utilizar box-shadow para camuflar o vazamento da imagem, da seguinte forma. */
    box-shadow: inset 0px -120px var(--cor-0);
   
-   /* utilizando está forma foi possivel vazar a imagem. Mas existem diversas outras*/
+   /* utilizando está forma foi possivel vazar a imagem. Mas existem outras*/
   
   
   }
