@@ -69,17 +69,74 @@
   .contact {
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;
+    
   }
 
   .contact-others {
     padding-bottom: 80px;
-    width: 400px;
+   
     margin-bottom: 0px;
   }
 }
 
-/* Parte de formulários */
+
+/*código de formulário do professor, *dar enfâse em formulários para melhorar o código */
+
+
+.contact-form { 
+  background: var(--cor-0);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form .col-2 {
+  grid-column: span 2;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 4px;
+  font: 500 1rem/1.5 "Poppins", sans-serif;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--cor-p1);
+  background: var(--cor-0);
+  box-shadow: 0 0 0 2px #fea;
+}
+
+@media (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .form .col-2 {
+    grid-column: 1;
+  }
+}
+
+
+
+/* Parte de formulários 
 
 .contact-form {
   background: var(--cor-0);
@@ -93,7 +150,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-.contact-form form label {
+.form label {
   display: block;
 }
 .contact-form form input {
@@ -148,12 +205,11 @@ textarea:focus {
     flex-direction: column;
   }
 }
+*/
+
 
 /* parte dos mapas */
 
-.map h2 {
-  margin-top: 60px;
-}
 
 .map-container {
   display: grid;
@@ -198,10 +254,21 @@ textarea:focus {
 
 @media (max-width: 800px) { 
   .map-container {
-
     grid-template-columns: 1fr;
     margin-top: 40px;
     gap: 40px;
     margin-bottom: 80px;
+  }
+}
+
+@media (max-width:600px) {
+
+  .map-address {
+    grid-template-columns: 1fr;
+  }
+
+  .upper {
+    text-align: center;
+    text-transform: uppercase;
   }
 }

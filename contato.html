@@ -8,6 +8,7 @@
     <title>Contatos | Bikcraft</title>
     <meta name="description" content="Nossos Contatos">
     <link rel="icon" href="favicon.svg" type="image/x-icon">
+      <link rel="preload" href="estilo/style.css" as="style">
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,7 @@
     <header class="header-bg">
         <div class="header container">
             <a href="./">
-                <img src="img/bikcraft.svg" alt="Logotipo">
+                <img src="img/bikcraft.svg" alt="Logotipo" width="136" height="32">
             </a>
             <nav aria-label="primaria">
                 <ul class="header-menu font-1-m cor-0">
@@ -58,9 +59,9 @@
                     <a href="tel:+5521881188888"> +55 21 88118 - 8888</a>
                 </address>
                 <div class="contact-social-media">
-                    <img src="img/redes/instagram-p.svg" alt="">
-                    <img src="img/redes/facebook-p.svg" alt="">
-                    <img src="img/redes/youtube-p.svg" alt="">
+                    <img src="img/redes/instagram-p.svg" alt="instagram" width="32" height="32">
+                    <img src="img/redes/facebook-p.svg" alt="facebook" width="32" height="32">
+                    <img src="img/redes/youtube-p.svg" alt="youtube" width="32" height="32">
                 </div>
             </section>
 
@@ -90,21 +91,18 @@
                         <label for="mensagem">Mensagem </label>
                         <textarea rows="5" name="mensagem" id="mensagem" placeholder="Digite o que deseja."> </textarea>
                     </div>
-                    <button class="botao">Enviar Mensagem</button>
+                    <button class="botao col-2">Enviar Mensagem</button>
                 </form>
             </section>
         </div>
 
     </main>
+    
+    <article class="map-bg">
 
+        <h2 class="font-1-xxl upper container">lojas locais<span class="cor-p1">.</span></h2>
 
-
-
-    <article class="map">
-
-        <h2 class="font-1-xxl container"> lojas locais<span class="cor-p1">.</span>
-
-            <div class="map-container">
+            <div class="map-container container" >
 
                 <div class="map-local">
                     <img src="img/lojas/rj.jpg" alt="Mapa indicando localização de loja no Rio de Janeiro">
@@ -151,38 +149,13 @@
             </div>
 
 
-
-
-
-
-
-
-
-
-
-        </h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </article>
+
     <footer class="footer-bg">
         <div class="footer container">
             <div class="footer-image">
                 <a href="./index.html">
-                    <img src="img/bikcraft.svg" alt="Logotipo">
+                    <img src="img/bikcraft.svg" alt="Logotipo" width="136" height="32">
                 </a>
             </div>
 
@@ -193,9 +166,9 @@
                 <li>Rua Ali Perto, 42 - Botafogo</li>
                 <li>Rio de Janeiro - RJ</li>
                 <div class="social-media">
-                    <img src="img/redes/instagram.svg" alt="">
-                    <img src="img/redes/facebook.svg" alt="">
-                    <img src="img/redes/youtube.svg" alt="">
+                    <img src="img/redes/instagram.svg" alt="instagram" width="32" height="32">
+                    <img src="img/redes/facebook.svg" alt="facebook" width="32" height="32">
+                    <img src="img/redes/youtube.svg" alt="youtube" width="32" height="32">
 
                 </div>
             </ul>

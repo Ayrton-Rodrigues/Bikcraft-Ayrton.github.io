@@ -1,5 +1,5 @@
 .introduction-bg {
-    background-color: #000000;
+    background-color: var(--cor-12);
    /* foi ensinado a utilizar box-shadow para camuflar o vazamento da imagem, da seguinte forma. */
    box-shadow: inset 0px -120px var(--cor-0);
   
